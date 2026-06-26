@@ -1,0 +1,11 @@
+MODEL:
+  TYPE: MID
+  ENCODER_TYPE: trajectron
+DATA:
+  DATASET_NAME: "Broad"
+  TP:
+    PRED_STATE: "state_v"
+    ACCEPT_NAN: true
+SOLVER:
+  USE_SCHEDULER: true
+  WEIGHT_DECAY: 0.0

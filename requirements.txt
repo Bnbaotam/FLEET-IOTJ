@@ -1,0 +1,20 @@
+# Minimal dependency list. For pinned installs, use requirements_vm1.txt instead.
+yacs
+tqdm
+numpy
+scipy
+torch
+optuna
+POT
+flwr
+
+dill
+ncls
+orjson
+joblib
+
+matplotlib
+seaborn
+scikit-learn
+easydict
+pyarrow

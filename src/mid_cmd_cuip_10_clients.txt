@@ -1,0 +1,99 @@
+#server port 1111-FedAvg
+python3 src/fl_experiments/server1111.py > src/fl_experiments/log/mid/fedavg/server-log-FedAvg-10-clients_state_v.txt 2>&1
+
+#Clients
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Broad.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client1-Broad-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Market.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client2-Market-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client3-Pine_Cam1-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client4-Pine_Cam2-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client5-Hwy27_Cam1-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client6-Hwy27_Cam2-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client7-Georgia_Cam1-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client8-Georgia_Cam2-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client9-Lindsay_Cam1-FedAvg-state_v.txt 2>&1
+python3 src/fl_experiments/client1111.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedavg/client10-Lindsay_Cam2-FedAvg-state_v.txt 2>&1
+
+
+
+#server port 2000-FedCMBA
+python3 src/fl_experiments/server_FedCMBA2000.py > src/fl_experiments/log/mid/fedcmba/server-log-FedCMBA-10-clients_state_v.txt 2>&1
+
+#Clients
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Broad.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client1-Broad-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Market.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client2-Market-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client3-Pine_Cam1-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client4-Pine_Cam2-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client5-Hwy27_Cam1-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client6-Hwy27_Cam2-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client7-Georgia_Cam1-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client8-Georgia_Cam2-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client9-Lindsay_Cam1-FedCMBA-state_v.txt 2>&1
+python3 src/fl_experiments/client2000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba/client10-Lindsay_Cam2-FedCMBA-state_v.txt 2>&1
+
+
+#server port 3000-FedFPBA
+python3 src/fl_experiments/server_FedFPBA3000.py > src/fl_experiments/log/mid/fedfpba/server-log-FedFPBA-10-clients_state_v.txt 2>&1
+
+#Clients
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Broad.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client1-Broad-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Market.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client2-Market-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client3-Pine_Cam1-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client4-Pine_Cam2-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client5-Hwy27_Cam1-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client6-Hwy27_Cam2-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client7-Georgia_Cam1-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client8-Georgia_Cam2-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client9-Lindsay_Cam1-FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client3000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedfpba/client10-Lindsay_Cam2-FedFPBA-state_v.txt 2>&1
+
+
+#server port 4000-FedCMBA_FedFPBA
+python3 src/fl_experiments/server_FedCMBA_FedFPBA4000.py > src/fl_experiments/log/mid/fedcmba_fefpba/server-log-FedCMBA_FedFPBA-10-clients_state_v.txt 2>&1
+
+#Clients
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Broad.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client1-Broad-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Market.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client2-Market-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client3-Pine_Cam1-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client4-Pine_Cam2-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client5-Hwy27_Cam1-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client6-Hwy27_Cam2-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client7-Georgia_Cam1-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client8-Georgia_Cam2-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client9-Lindsay_Cam1-FedCMBA_FedFPBA-state_v.txt 2>&1
+python3 src/fl_experiments/client4000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedcmba_fefpba/client10-Lindsay_Cam2-FedCMBA_FedFPBA-state_v.txt 2>&1
+
+
+
+#server port 5000-FedRepPP
+python3 src/fl_experiments/server_FedRepPP5000.py > src/fl_experiments/log/mid/fedrep++/server-log-FedRep++-10-clients_state_v.txt 2>&1
+
+#Clients
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Broad.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client1-Broad-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Market.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client2-Market-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client3-Pine_Cam1-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client4-Pine_Cam2-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client5-Hwy27_Cam1-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client6-Hwy27_Cam2-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client7-Georgia_Cam1-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client8-Georgia_Cam2-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client9-Lindsay_Cam1-FedRep++-state_v.txt 2>&1
+python3 src/fl_experiments/client5000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedrep++/client10-Lindsay_Cam2-FedRep++-state_v.txt 2>&1
+
+
+
+#server port 7000-FedProx
+python3 src/fl_experiments/server_FedProx7000.py > src/fl_experiments/log/mid/fedprox/server-log-FedProx-10-clients_state_v.txt 2>&1
+
+#Clients
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Broad.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client1-Broad-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Market.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client2-Market-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client3-Pine_Cam1-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Pine_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client4-Pine_Cam2-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client5-Hwy27_Cam1-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Hwy27_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client6-Hwy27_Cam2-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client7-Georgia_Cam1-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Georgia_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client8-Georgia_Cam2-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam1.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client9-Lindsay_Cam1-FedProx-state_v.txt 2>&1
+python3 src/fl_experiments/client7000.py --config_file config/TP/MID/CUIP_10_clients/Lindsay_Cam2.yml --data_fraction 1.0 > src/fl_experiments/log/mid/fedprox/client10-Lindsay_Cam2-FedProx-state_v.txt 2>&1
+
+

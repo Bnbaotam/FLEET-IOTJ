@@ -1,0 +1,11 @@
+MODEL:
+  TYPE: fastpredNF_CIF_separate_cond
+  ENCODER_TYPE: trajectron
+DATA:
+  DATASET_NAME: C003
+  TP:
+    PRED_STATE: state_v
+    ACCEPT_NAN: true
+SOLVER:
+  USE_SCHEDULER: true
+  WEIGHT_DECAY: 0.0
